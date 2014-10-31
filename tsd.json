@@ -1,0 +1,24 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "svg-pan-zoom/svg-pan-zoom.d.ts": {
+      "commit": "1fa34a5449485c128e41d2c46c7ffa89f5e54454"
+    },
+    "angularjs/angular.d.ts": {
+      "commit": "1fa34a5449485c128e41d2c46c7ffa89f5e54454"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "1fa34a5449485c128e41d2c46c7ffa89f5e54454"
+    },
+    "jasmine/jasmine.d.ts": {
+      "commit": "1fa34a5449485c128e41d2c46c7ffa89f5e54454"
+    },
+    "angularjs/angular-mocks.d.ts": {
+      "commit": "1fa34a5449485c128e41d2c46c7ffa89f5e54454"
+    }
+  }
+}

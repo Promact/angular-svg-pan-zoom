@@ -1,0 +1,10 @@
+{
+  "name": "angular-svg-pan-zoom",
+  "version": "1.0.0",
+  "description": "AngularJS wrapper for svg-pan-zoom library",
+  "dependencies": {
+    "svg-pan-zoom": "https://github.com/ariutta/svg-pan-zoom.git#~2.3.9",
+    "angularjs": "~1.2.25",
+    "jquery": "~2.1.1"
+  }
+}
