@@ -42,6 +42,6 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
     // Default task(s).
-    grunt.registerTask('default', ['typescript', 'uglify']);
+    grunt.registerTask('default', ['typescript', 'uglify', 'karma:unit']);
 
 };

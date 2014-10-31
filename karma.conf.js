@@ -16,10 +16,12 @@ module.exports = function (config) {
         // list of files / patterns to load in the browser
         files: [
             'bower_components/jquery/dist/jquery.js',
-            'bower_components/angularjs/angular.js',
+            'bower_components/angular/angular.js',
+            'bower_components/angular-mocks/angular-mocks.js',
             'bower_components/svg-pan-zoom/dist/svg-pan-zoom.js',
-            'src/*.ts',
-            'test/*.ts'
+            'demo/script/app.js',
+            'src/*.js',
+            'test/*.js'
         ],
 
 

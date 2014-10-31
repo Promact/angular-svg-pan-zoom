@@ -12,7 +12,7 @@ interface ISvgPanZoomControllerScope extends ng.IScope {
 
 angular.module("demo", ["SvgPanZoom"])
     .controller("SvgPanZoomController", ["$scope", "spz", ($scope:ISvgPanZoomControllerScope, spz:SvgPanZoom.ISvgPanZoom)=> {
-        var spzTrigger:SvgPanZoom.ISvgPanZoom = spz("#demo-tiger", []);
+        var spzTrigger:SvgPanZoom.ISvgPanZoom = spz(angular.element("#demo-tiger"));
         $scope.ZoomIn = () => {
             spzTrigger.zoomIn();
         };
