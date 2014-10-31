@@ -6,7 +6,7 @@ before_script:
   - export DISPLAY=:99.0
   - export PHANTOMJS_BIN=/usr/local/phantomjs/bin/phantomjs
   - npm install
-  - npm install -gq bower codeclimate-test-reporter # coveralls
+  - npm install -gq grunt bower codeclimate-test-reporter # coveralls
   - bower install --dev --config.interactive=0
   - grunt --version
   - bower --version
