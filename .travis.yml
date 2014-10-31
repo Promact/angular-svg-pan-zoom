@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "0.10"
+
+before_script:
+  - export DISPLAY=:99.0
+  - export PHANTOMJS_BIN=/usr/local/phantomjs/bin/phantomjs
+  - npm install
+  - npm install -gq bower codeclimate-test-reporter # coveralls
+  - bower install --dev --config.interactive=0
+  - grunt --version
+  - bower --version
+  - date --rfc-2822
+
+script:
+  - grunt
+
+after_script:
+  - cat test/coverage/*/lcov.info | codeclimate
+
+addons:
+  code_climate:
+    repo_token: a1ea3cd67aa05a04a99373fd8cabc6cd4a13adc32afdd94a026cfcd0b6e50a3d
