@@ -5,8 +5,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         typescript: {
             base: {
-                src: ['src/*.ts'],
-                dest: 'dist',
+                src: ['src/*.ts', 'test/*.ts', 'demo/script/*.ts'],
                 options: {
                     module: 'amd', //or commonjs
                     target: 'es5', //or es3

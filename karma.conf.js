@@ -32,8 +32,8 @@ module.exports = function (config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'src/*.ts': ['typescript'],
-            'src/*.ts': ['coverage']
+            '**/*.ts': ['typescript'],
+            'src/*.js': ['coverage']
         },
 
 
@@ -81,6 +81,7 @@ module.exports = function (config) {
             },
             // transforming the filenames
             transformPath: function (path) {
+                console.log(path);
                 return path.replace(/\.ts$/, '.js');
             }
         },
@@ -95,7 +96,8 @@ module.exports = function (config) {
         plugins: [
             'karma-jasmine',
             'karma-phantomjs-launcher',
-            'karma-coverage'
+            'karma-coverage',
+            'karma-typescript-preprocessor'
         ]
     });
 };
