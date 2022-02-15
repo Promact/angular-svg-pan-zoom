@@ -1,3 +1,8 @@
+Deprecated
+====================
+
+As this library was built for Angular 1. It no longer serves any purpose.
+
 angular-svg-pan-zoom
 ====================
 [![Build Status](https://travis-ci.org/Promact/angular-svg-pan-zoom.svg?branch=master)](https://travis-ci.org/Promact/angular-svg-pan-zoom)
